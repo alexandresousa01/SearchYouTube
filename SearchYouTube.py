@@ -15,7 +15,7 @@ def download_youtube(videoId):
         ydl.download([URL])
 
 
-response = requests.get("https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=12615&q=roubo+a+m%C3%A3o+armada&key=AIzaSyCP5xk_Kmu9GZLjMmD3fpr_zuHKOMI-A_c")
+response = requests.get("https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=12615&q=roubo+a+m%C3%A3o+armada&key=[PutYourKey]")
 
 # Convert response to dict
 dicionario = json.loads(response.content.decode("utf-8"))
